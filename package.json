@@ -1,0 +1,16 @@
+{
+  "name": "devmeet",
+  "version": "1.0.0",
+  "description": "make the connections on the devmeet and explore the new world",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gulshan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
