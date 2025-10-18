@@ -6,6 +6,10 @@ app.use("/signup",(req,res)=>{
    res.send("Hello, I am Signup Page")
 })
 
+app.use("/profile",(req,res)=>{
+   res.send("Hello, I am Profile Page")
+})
+
 app.use("/login",(req,res)=>{
    res.send("Hello, I am Login Page")
 })
