@@ -2,20 +2,20 @@ const express= require("express");
 
 const app=express();
 
-app.use("/signup",(req,res)=>{
-   res.send("Hello, I am Signup Page")
+app.use("/user",(req,res)=>{
+    res.send("user first api hit")
 })
 
-app.use("/profile",(req,res)=>{
-   res.send("Hello, I am Profile Page")
+app.get("/user",(req,res)=>{
+    res.send({firstname:"Gulshan", Lastname:"Kumar"})
 })
 
-app.use("/login",(req,res)=>{
-   res.send("Hello, I am Login Page")
+app.post("/profile",(req,res)=>{
+   res.send("Profile is updated")
 })
 
-app.use("/",(req,res)=>{
-   res.send("Hello, I am Home Page")
+app.delete("/profile",(req,res)=>{
+   res.send("User profile is deleted")
 })
 
 
